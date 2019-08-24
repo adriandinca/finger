@@ -5,6 +5,7 @@
 	<groupId>ea</groupId>
 	<artifactId>finger</artifactId>
 	<packaging>war</packaging>
+	<version>8.1-SNAPSHOT</version>
 
 	<properties>
 		<maven.compiler.source>1.6</maven.compiler.source>
