@@ -9,42 +9,9 @@
 	<ui:define name="title">EA CRM PM</ui:define>
 	<ui:define name="top">CRM Preventive Maintenance</ui:define>
 	<ui:define name="left">
-		<h:form>
-			<h2>Text field</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 2</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 3</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 4</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 5</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 6</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 7</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h2>Text field 8</h2>
-			<p>
-				<h:inputText value="#{crmView.test}" readonly="true" />
-			</p>
-			<h:commandButton value="Save" />
-		</h:form>
+		<ui:include src="subpages/left.xhtml" />
 	</ui:define>
+
 	<ui:define name="bottom">Made by Adrian Dinca</ui:define>
 </ui:composition>
 </html>
