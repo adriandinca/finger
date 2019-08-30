@@ -5,18 +5,21 @@
  * compliance with  the terms of the License at:
  * https://github.com/javaee/tutorial-examples/LICENSE.txt
  */
-package beans;
+package views;
 
 
-import javax.enterprise.context.RequestScoped;
+import java.io.Serializable;
+
+import javax.faces.flow.FlowScoped;
 import javax.inject.Named;
 
 @Named("crmView")
-@RequestScoped
-public class CRMView {
+@FlowScoped("crmFlow")
+public class CRMView implements Serializable {
+	private static final long serialVersionUID = -2962984875710807175L;
 
-    public String getTest() {
-        return "TEST";
+	public String getTest() {
+        return "test..";
     }
 }
 
