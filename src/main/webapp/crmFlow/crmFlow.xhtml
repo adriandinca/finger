@@ -13,7 +13,10 @@
 		<ui:define name="right">
 			<ui:include src="subpages/details.xhtml" />
 			<h:form>
-				<h:commandButton value="Next!" action="crmFlow2" />
+				<p>
+					<h:commandButton id="#{nextButtonId}" value="Next!"
+						action="crmFlow2" />
+				</p>
 			</h:form>
 		</ui:define>
 		<ui:define name="bottom">Made by Adrian Dinca</ui:define>

@@ -4,7 +4,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-	
+
 <h:body>
 	<ui:composition template="/layout-template.xhtml">
 		<ui:define name="title">CRM PM</ui:define>
@@ -14,7 +14,10 @@
 		</ui:define>
 		<ui:define name="right">
 			<h:form>
-				<h:commandButton value="Next!" action="crmFlow3" />
+				<p>
+					<h:commandButton id="#{nextButtonId}" value="Next!"
+						action="crmFlow3" />
+				</p>
 			</h:form>
 		</ui:define>
 		<ui:define name="bottom">Made by Adrian Dinca</ui:define>
