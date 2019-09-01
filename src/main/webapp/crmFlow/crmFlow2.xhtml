@@ -4,19 +4,21 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-
-<ui:composition template="/template.xhtml">
-	<ui:define name="title">CRM PM</ui:define>
-	<ui:define name="top">CRM Preventive Maintenance</ui:define>
-	<ui:define name="left">
-		<ui:include src="subpages/details.xhtml" />
-	</ui:define>
-	<ui:define name="right">
-		<h:form>
-			<h:commandButton value="Go next!" action="crmFlow3" />
-		</h:form>
-	</ui:define>
-	<ui:define name="bottom">Made by Adrian Dinca</ui:define>
-</ui:composition>
+	
+<h:body>
+	<ui:composition template="/template.xhtml">
+		<ui:define name="title">CRM PM</ui:define>
+		<ui:define name="top">CRM Preventive Maintenance</ui:define>
+		<ui:define name="left">
+			<ui:include src="subpages/details.xhtml" />
+		</ui:define>
+		<ui:define name="right">
+			<h:form>
+				<h:commandButton value="Next!" action="crmFlow3" />
+			</h:form>
+		</ui:define>
+		<ui:define name="bottom">Made by Adrian Dinca</ui:define>
+	</ui:composition>
+</h:body>
 </html>
 
