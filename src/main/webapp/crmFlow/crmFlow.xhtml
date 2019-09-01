@@ -6,14 +6,13 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
 <h:body>
-	<ui:composition template="/template.xhtml">
+	<ui:composition template="/layout-template.xhtml">
 		<ui:define name="title">CRM PM</ui:define>
 		<ui:define name="top">CRM Preventive Maintenance</ui:define>
 		<ui:define name="left" />
 		<ui:define name="right">
 			<ui:include src="subpages/details.xhtml" />
 			<h:form>
-			ONE
 				<h:commandButton value="Next!" action="crmFlow2" />
 			</h:form>
 		</ui:define>

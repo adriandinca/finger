@@ -6,12 +6,16 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
 <h:body>
-	<ui:composition template="/template.xhtml">
+	<ui:composition template="/layout-template.xhtml">
 		<ui:define name="title">CRM PM</ui:define>
 		<ui:define name="top">CRM Preventive Maintenance</ui:define>
 		<ui:define name="left" />
 		<ui:define name="right">
-		THE END!
+			<h:form>
+				<p>
+					<h:commandButton value="CRM Flow" action="crmFlow" />
+				</p>
+			</h:form>
 		</ui:define>
 		<ui:define name="bottom">Made by Adrian Dinca</ui:define>
 	</ui:composition>
