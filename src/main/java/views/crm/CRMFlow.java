@@ -20,7 +20,7 @@ public class CRMFlow implements Serializable {
 		flowBuilder.viewNode(flowId, 
 				"/" + flowId + "/" + flowId + ".xhtml").markAsStartNode();
 
-		flowBuilder.returnNode("crmFlowReturn").fromOutcome("/crmFlow/crmFlow-home");
+		flowBuilder.returnNode("crmFlowReturn").fromOutcome("/crmFlow-home");
 
 		return flowBuilder.getFlow();
 	}

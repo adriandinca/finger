@@ -8,8 +8,13 @@
 <h:body>
 	<h:form>
 		<p>
-			<h:outputLabel value="#{cydaxView.test}" />
-			<h:commandButton value="Save" action="cydaxFlowReturn" />
+			<h:outputLabel id="test" value="#{cydaxView.test}" />
+		</p>
+		<p>
+			<h:outputLabel id="test2" value="#{cydaxView.test2}" />
+		</p>
+		<p>
+			<h:commandButton id="nextButton" value="Save" action="cydaxFlowReturn" />
 		</p>
 	</h:form>
 </h:body>

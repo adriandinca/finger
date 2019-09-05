@@ -20,7 +20,7 @@ public class CYDAXFlow implements Serializable {
 		flowBuilder.viewNode(flowId, 
 				"/" + flowId + "/" + flowId + ".xhtml").markAsStartNode();
 
-		flowBuilder.returnNode("cydaxFlowReturn").fromOutcome("/cydaxFlow/cydaxFlow-home");
+		flowBuilder.returnNode("cydaxFlowReturn").fromOutcome("/cydaxFlow-home");
 
 		return flowBuilder.getFlow();
 	}

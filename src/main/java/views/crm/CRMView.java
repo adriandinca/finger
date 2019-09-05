@@ -12,7 +12,12 @@ public class CRMView implements Serializable {
 	private static final long serialVersionUID = -2962984875710807175L;
 
 	public String getTest() {
-        return "test..";
+        return "crm test!";
     }
+
+	public String getTest2() {
+        return "crm test2!";
+    }
+
 }
 
