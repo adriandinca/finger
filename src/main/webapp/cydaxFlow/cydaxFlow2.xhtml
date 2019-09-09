@@ -5,16 +5,22 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
+
 <h:body>
-	<h:form>
-		<p>
-			<h:inputText id="test2" value="#{cydaxView.test2}" />
-		</p>
-		<p>
-			<h:outputLabel value="#{cydaxView.test}" />
-			<h:commandButton id="nextButton" value="Save" action="cydaxFlow3" />
-		</p>
-	</h:form>
+	<ui:composition template="/cydax-layout-template.xhtml">
+		<ui:define name="head">HEAD</ui:define>
+		<ui:define name="body">
+			<h:form>
+				<p>
+					<h:inputText id="test2" value="#{cydaxView.test2}" />
+				</p>
+				<p>
+					<h:outputLabel value="#{cydaxView.test}" />
+					<h:commandButton id="#{nextBtnId}" value="#{nextBtnValue}"
+					action="cydaxFlow3" />
+				</p>
+			</h:form>
+		</ui:define>
+	</ui:composition>
 </h:body>
 </html>
-

@@ -6,14 +6,14 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<h:outputStylesheet name="default.css" />
+	<h:outputStylesheet name="crm-default.css" />
 	<title><ui:insert name="title">CRM Template</ui:insert></title>
 </h:head>
 
-<h:body styleClass="body">
-	<ui:param name="nextButtonId" value="nextButton" />
-	<ui:param name="nextBtnValue" value="GO" />
+<ui:param name="nextBtnId" value="nextBtn" />
+<ui:param name="nextBtnValue" value="GO" />
 
+<h:body styleClass="body">
 	<div class="wrapper">
 		<div class="top">
 			<ui:insert name="top">Head</ui:insert>
