@@ -11,11 +11,13 @@
 		<ui:define name="head">HEAD</ui:define>
 		<ui:define name="body">
 			<h:form>
+				<h2>Search for an SR:</h2>
 				<p>
-					<h:inputText id="test" value="#{cydaxView.test}" />
+					<h:inputText id="cydax-serviceRequest"
+						value="#{cydaxView.serviceRequest}" />
 				</p>
 				<p>
-					<h:commandButton id="#{nextBtnId}" value="#{nextBtnValue}"
+					<h:commandButton id="#{nextBtnId}" value="Search"
 						action="cydaxFlow2" />
 				</p>
 			</h:form>

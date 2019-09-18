@@ -15,8 +15,12 @@ import lombok.Setter;
 @FlowScoped("cydaxFlow")
 public class CYDAXView implements Serializable {
 	private static final long serialVersionUID = -2962984875710807175L;
-	
-	private String test;
-	private String test2;
+
+	private String serviceRequest;
+	private String country;
+	private String agreement;
+	private String company;
+	private String partNumber;
+
 }
 

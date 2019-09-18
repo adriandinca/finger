@@ -3,13 +3,29 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://xmlns.jcp.org/jsf/html"
+	xmlns:pf="http://primefaces.org/ui">
 
 <h:body>
 	<ui:composition template="/crm-layout-template.xhtml">
 		<ui:define name="title">CRM PM</ui:define>
 		<ui:define name="top">CRM Preventive Maintenance</ui:define>
-		<ui:define name="left" />
+		<ui:define name="left">
+			<h:form>
+				<br />
+				<p>
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="Bergembier" />
+						<f:selectItem itemLabel="ParkVia" />
+						<f:selectItem itemLabel="HP" />
+					</p:selectOneMenu>
+				</p>
+				<p:inputTextarea rows="6" cols="30"
+					value="choose a project and let us rock n' roll!" />
+			</h:form>
+		</ui:define>
 		<ui:define name="right">
 			<ui:include src="subpages/details.xhtml" />
 			<h:form>

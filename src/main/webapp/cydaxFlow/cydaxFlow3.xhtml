@@ -11,15 +11,10 @@
 		<ui:define name="head">HEAD</ui:define>
 		<ui:define name="body">
 			<h:form>
+				<ui:include src="subpages/details-editable.xhtml" />
 				<p>
-					<h:outputLabel id="test" value="#{cydaxView.test}" />
-				</p>
-				<p>
-					<h:outputLabel id="test2" value="#{cydaxView.test2}" />
-				</p>
-				<p>
-					<h:commandButton id="#{nextBtnId}" value="#{nextBtnValue}"
-						action="cydaxFlowReturn" />
+					<h:commandButton id="#{nextBtnId}" value="Save"
+						action="cydaxFlow4" />
 				</p>
 			</h:form>
 		</ui:define>

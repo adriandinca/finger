@@ -4,14 +4,27 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:form>
-	<h2>Text field</h2>
+	<h2>Service Request</h2>
 	<p>
-		<h:inputText id="crm-test" value="#{crmView.test}" readonly="true" />
+		<h:inputText id="serviceRequest" value="#{crmView.serviceRequest}" readonly="true" />
 	</p>
-	<h2>Text field 2</h2>
+	<h2>Country</h2>
 	<p>
-		<h:inputText id="crm-test2" value="#{crmView.test2}" readonly="true" />
+		<h:inputText id="country" value="#{crmView.country}" readonly="true" />
 	</p>
+	<h2>Agreement</h2>
+	<p>
+		<h:inputText id="agreement" value="#{crmView.agreement}" readonly="true" />
+	</p>
+	<h2>Company</h2>
+	<p>
+		<h:inputText id="company" value="#{crmView.company}" readonly="true" />
+	</p>
+	<h2>Part Number</h2>
+	<p>
+		<h:inputText id="partNumber" value="#{crmView.partNumber}" readonly="true" />
+	</p>
+
 </h:form>
 </html>
 

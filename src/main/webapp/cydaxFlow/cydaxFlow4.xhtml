@@ -10,11 +10,11 @@
 	<ui:composition template="/cydax-layout-template.xhtml">
 		<ui:define name="head">HEAD</ui:define>
 		<ui:define name="body">
-			<h2>Welcome to the CYDAX main page</h2>
 			<h:form>
+				<ui:include src="subpages/details.xhtml" />
 				<p>
-					<h:commandButton id="#{nextBtnId}" value="Got to search"
-						action="cydaxFlow" />
+					<h:commandButton id="#{nextBtnId}" value="Main page"
+						action="cydaxFlowReturn" />
 				</p>
 			</h:form>
 		</ui:define>

@@ -11,13 +11,9 @@
 		<ui:define name="head">HEAD</ui:define>
 		<ui:define name="body">
 			<h:form>
+				<ui:include src="subpages/details.xhtml" />
 				<p>
-					<h:inputText id="test2" value="#{cydaxView.test2}" />
-				</p>
-				<p>
-					<h:outputLabel value="#{cydaxView.test}" />
-					<h:commandButton id="#{nextBtnId}" value="#{nextBtnValue}"
-					action="cydaxFlow3" />
+					<h:commandButton id="#{nextBtnId}" value="Edit" action="cydaxFlow3" />
 				</p>
 			</h:form>
 		</ui:define>

@@ -6,7 +6,7 @@
 	color: #000000;
 }
 
-.center{
+.center {
 	text-align: center;
 }
 
@@ -41,3 +41,16 @@
 	text-align: right;
 	padding: 0.2%;
 }
+
+.sr-wrapper {
+	display: grid;
+	grid-gap: 1%;
+	height: 100%;
+	text-align: center;
+}
+
+.sr {
+	background-color: #4D4D4D;
+	padding: 0.2%;
+}
+

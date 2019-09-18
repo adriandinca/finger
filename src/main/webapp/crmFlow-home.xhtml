@@ -3,19 +3,37 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
-	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:body>
 	<ui:composition template="/crm-layout-template.xhtml">
 		<ui:define name="title">CRM PM</ui:define>
 		<ui:define name="top">CRM Preventive Maintenance</ui:define>
-		<ui:define name="left" />
-		<ui:define name="right">
+		<ui:define name="left">
 			<h:form>
+				<br />
 				<p>
-					<h:commandButton id="#{nextBtnId}" value="#{nextBtnValue}"
-						action="crmFlow" />
+					<p:selectOneMenu>
+						<f:selectItem itemLabel="Bergembier" />
+						<f:selectItem itemLabel="ParkVia" />
+						<f:selectItem itemLabel="HP" />
+					</p:selectOneMenu>
 				</p>
+				<p:inputTextarea rows="6" cols="30"
+					value="choose a project and let us rock n' roll!" />
+			</h:form>
+		</ui:define>
+		<ui:define name="right">
+			<h:form class="sr-wrapper">
+				<h:commandButton id="#{nextBtnId}" value="Some random SR"
+					action="crmFlow" class="sr" />
+				<h:commandButton value="Some random SR" action="crmFlow" class="sr" />
+				<h:commandButton value="Some random SR" action="crmFlow" class="sr" />
+				<h:commandButton value="Some random SR" action="crmFlow" class="sr" />
+				<h:commandButton value="Some random SR" action="crmFlow" class="sr" />
+				<h:commandButton value="Some random SR" action="crmFlow" class="sr" />
 			</h:form>
 		</ui:define>
 		<ui:define name="bottom">Made by Adrian Dinca</ui:define>
